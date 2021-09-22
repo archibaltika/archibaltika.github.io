@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+.navbar > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+ol{
+  list-style-position: inside;
+}
+ol > li{
+  padding: 10px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+img{
+  max-width:100%;
+}
+figure{
+  margin:0;
+}
+.textbox{
+  background: white;
+  border: 2px solid black;
+  text-align: right;
+  padding: 5px;
+  font-size: large;
+  max-width: 25vw;
+  min-width: 20vw;
+}
+.grid-container {
+  column-gap: 8%;
+  display: grid;
+  grid-template-columns: minmax(18vw, max-content) minmax(18vw, max-content) minmax(18vw, max-content) minmax(18vw, max-content);
+  grid-template-rows: minmax(15vh, max-content) minmax(60vh, max-content) minmax(10vh, max-content) minmax(15vh, max-content);
+}
+.grid-item {
+  font-size: 20px;
+  padding: 0px 5px 0px 30px;
+  border:2px solid black;
+  margin: -1px;
+  display: flex;
+  text-align: right;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  background-color: rgba(0, 132, 255, 0.486);
+  align-items: center;
+  flex-direction: inherit;
+  text-align: left;
+  justify-content: space-between;
+}
+.navbar {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: rgba(117, 255, 163, 0.63);
+  font-size: 1.5vw;
+}
+.item3 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: white;
+}
+.item4 {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+  background-color: rgba(117, 255, 163, 0.63);
+  text-align: right;  
+  font-size: 2vw;
+}
+.item5 {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+  background-color: rgba(255, 207, 74, 0.438);
+  font-size: 1.5vw;
+}
+.item6 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  background-color: rgba(255, 207, 74, 0.438);
+}
+.footer {
+  grid-column: 1 / span 4;
+  grid-row: 4;
+  background-color: rgba(0, 132, 255, 0.486);
+  justify-content: space-between;
+  align-content: stretch;
+  flex-direction: row;
+  align-items: center;
+}
